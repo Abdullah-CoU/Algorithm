@@ -63,6 +63,7 @@ void Solve()
 			DFS2(src, scc);
 		}
 	}
+	cout << scc << nl;
 	vector<int> indeg(n + 1, 0);
 	for (auto it : e) {
 		if (comp[it.F] != comp[it.S]) {
